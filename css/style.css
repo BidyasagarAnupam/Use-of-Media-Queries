@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+div.general {
+  display: inline-block;
+  text-align: left;
+  border: 2px solid white;
+  border-radius: 15px;
+  height: 500px;
+  width: 220px;
+  margin: 20px 20px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  word-wrap: normal;
+  box-shadow: 5px 5px 5px black;
+}
+
+div > h2 {
+  text-align: center;
+}
+div#box_1 {
+  background: rgb(139, 2, 2);
+}
+div#box_2 {
+  background: rgb(127, 161, 3);
+}
+div#box_3 {
+  background: rgb(0, 162, 255);
+}
+div#box_4 {
+  background: rgb(3, 69, 192);
+}
+div#box_5 {
+  background: rgb(125, 2, 136);
+}
+
+/* Media Queries */
+
+/* for min-width: 1001px */
+@media all and (min-width: 1001px) and (max-width: 1024px) {
+  div.general {
+    height: 400px;
+    width: 200px;
+    font-size: 25px;
+    margin: 15px 26px;
+    overflow: auto;
+  }
+}
+
+/* for max-width:1000px and min-width:700px  */
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  div.general {
+    height: 350px;
+    width: 180px;
+    font-size: 25px;
+    margin: 15px 15px;
+    overflow: auto;
+  }
+}
+
+/* for max-width:699px and min-width:520px */
+@media all and (max-width: 699px) and (min-width: 520px) {
+  div.general {
+    height: 300px;
+    width: 150px;
+    font-size: 30px;
+    margin: 15px 15px;
+    overflow: auto;
+  }
+}
+
+/* for max-width:519px */
+@media all and (max-width: 519px) {
+  div.general {
+    height: 350px;
+    width: 180px;
+    font-size: 30px;
+    margin: 15px 15px;
+    overflow: auto;
+  }
+}
